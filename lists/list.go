@@ -1,11 +1,12 @@
 package lists
 
 // InList [T comparable]
-//
-//	@Description:判断item是否在arr中存在
-//	@param arr 数组/切片
-//	@param item 元素
-//	@return bool
+// @Author ricardo
+// @Date 17:03 2024/7/5
+// @Description:判断item是否在arr中存在
+// @param arr 数组/切片
+// @param item 元素
+// @return bool
 func InList[T comparable](arr []T, item T) bool {
 	return InListWithFn(arr, item, func(a, b T) bool {
 		return a == b
@@ -14,6 +15,8 @@ func InList[T comparable](arr []T, item T) bool {
 
 // InListWithFn [T any]
 //
+//	@Author ricardo
+//	@Date 17:03 2024/7/5
 //	@Description: 通过传入自定义方法，判断item是否在arr中存在
 //	@param arr 数组/切片
 //	@param item 目标元素
