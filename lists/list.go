@@ -1,5 +1,9 @@
 package lists
 
+import (
+	"fmt"
+)
+
 // InList
 //
 //	@Description:判断item是否在arr中存在
@@ -13,4 +17,8 @@ func InList(arr []interface{}, item interface{}) bool {
 		}
 	}
 	return false
+}
+
+func Hello() {
+	fmt.Println("Hello World")
 }
